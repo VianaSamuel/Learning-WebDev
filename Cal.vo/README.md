@@ -10,9 +10,9 @@ O intuito do site é ser simples, servindo como um guia informativo sobre a alop
 
 ## Minha Contribuição
 
-- Criei o *index* do site
-- Criei o template padrão do site (todas as outras partes o seguiram)
-- Criei a página de compartilhamento do site
+- Criei o *index* do site;
+- Criei o template padrão do site (todas as outras partes o seguiram);
+- Criei a página de compartilhamento do site.
 
 ## Repositório Original
 
