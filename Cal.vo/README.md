@@ -16,4 +16,4 @@ O intuito do site é ser simples, servindo como um guia informativo sobre a alop
 
 ## Repositório Original
 
-Para acessar o repositório original, linkado à faculdade, [clique aqui](https://github.com/ICEI-PUC-Minas-PMGCC-TI/tiaw-pmg-cc-m-20221-tiaw-calvicie-grupo-3).
+Para acessar o repositório original (linkado à faculdade) do projeto, [clique aqui](https://github.com/ICEI-PUC-Minas-PMGCC-TI/tiaw-pmg-cc-m-20221-tiaw-calvicie-grupo-3).
