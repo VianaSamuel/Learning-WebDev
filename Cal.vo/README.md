@@ -3,7 +3,6 @@
  <img src="https://github.com/VianaSamuel/Learning-WebDev/blob/main/Cal.vo/imagens/img-index/logo.png" height="300"/>
 </p>
 <br>
-<br>
 
 ## Introdução
 Nesse repositório está contido **somente a minha contribuição** para o trabalho de 1º período da faculdade (TRABALHO INTERDISCIPLINAR: APLICAÇÕES WEB).
@@ -19,7 +18,6 @@ O intuito do site é ser simples, servindo como um guia informativo sobre a alop
 - Criei o *index* do site;
 - Criei o template padrão do site (todas as outras partes o seguiram);
 - Criei a página de compartilhamento do site.
-<br>
 <br>
 
 ## Repositório Original
