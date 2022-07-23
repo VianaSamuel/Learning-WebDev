@@ -1,11 +1,12 @@
-# Cal.vo - Trabalho do 1º Período
-<p align=center>
- <img src="https://github.com/VianaSamuel/Learning-WebDev/blob/main/Cal.vo/imagens/img-index/logo.png" height="300"/>
-</p>
+# Cal.vo
+### Trabalho realizado no 1º Período da faculdade
 <br>
+<p align=center>
+ <img src="https://github.com/VianaSamuel/Learning-WebDev/blob/main/Cal.vo/imagens/img-index/logo.png" height="150"/>
+</p>
 
 ## Introdução
-Nesse repositório está contido **somente a minha contribuição** para o trabalho de 1º período da faculdade (TRABALHO INTERDISCIPLINAR: APLICAÇÕES WEB).
+Neste repositório está contido **somente a minha contribuição** para um trabalho da matéria de *Trabalho Interdisciplinar: Aplicações Web*, realizada no 1º período do curso.
 <br>
 <br>
 
