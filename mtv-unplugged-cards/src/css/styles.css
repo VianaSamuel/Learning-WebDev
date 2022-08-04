@@ -1,0 +1,237 @@
+/* CORPO */
+body {
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-image: url(../img/teste.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* CORPO */
+/* CABEÇALHO */
+.banner {
+    padding: 30px 0;
+}
+
+.banner .subtitle {
+    margin-top: 6px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    filter: drop-shadow(1px 1px 8px #111);
+}
+
+.header .title {
+    color: #f1ecff;
+}
+
+.header .logo {
+    width: 75px;
+    height: auto;
+    user-select: none;
+}
+
+.subtitle {
+    color:#f1ecff;
+    text-align: center;
+}
+/* CABEÇALHO */
+/* SLIDER */
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 80px;
+}
+
+.btn-slider {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border: 0;
+    border-radius: 50px;
+    color: #f1ecff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: background-color 0.15s ease-in-out;
+    transition: box-shadow 0.4s;
+}
+
+.btn-slider img {
+    user-select: none;
+}
+
+.btn-slider.btn-left {
+    transform: rotateY(180deg);
+}
+
+@media (hover: hover) {
+    .btn-slider:hover {
+        background-color: #8351FE;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+}
+/* SLIDER */
+/* CARDS */
+.cards {
+    position: relative;
+    width: 310px;
+    height: 520px;
+}
+/* CARDS */
+/* CARD INDIVIDUAL */
+.single-card {
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: opacity 0.4s linear;
+}
+/* CARD INDIVIDUAL */
+/* CARD SELECIONADA */
+.single-card.selected {
+    opacity: 1;
+    z-index: 1;
+}
+/* CARD SELECIONADA */
+/* CARD - INTRO */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.single-card .intro .name {
+    color: #111;
+    font-size: 22px;
+}
+
+.single-card .intro .year {
+    color: #f1ecff;
+    background-color: #333;
+    padding: 6px 10px;
+    border-radius: 20px;
+    user-select: none;
+}
+/* CARD - INTRO */
+/* CARD - IMG */
+.single-card .img-container {
+    text-align: center;
+}
+
+.single-card .img {
+    opacity: 80%;
+    max-width: 100%;
+    max-height: 280px;
+    padding: 20px;
+    user-select: none;
+    filter: drop-shadow(1px 1px 8px #111)
+            drop-shadow(-1px -1px 4px #111);
+}
+/* CARD - IMG */
+/* CARD - INFO */
+.single-card .info {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.single-card .info .description-title {
+    color: #f1ecff;
+    background-color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px;
+    user-select: none;
+}
+
+.single-card .info .description-text {
+    background-color: white;
+    max-height: 125px;
+    overflow-y: auto;
+    text-align: justify;
+    font-size: 14px;
+    padding: 8px 12px;
+}
+/* CARD - INFO */
+/* CARD - BACKGROUNDS */
+.nirvana {
+    background-image: url(../img/nirvana-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rem {
+    background-image: url(../img/rem-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.alice {
+    background-image: url(../img/alice-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pearl {
+    background-image: url(../img/pearl-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.stone {
+    background-image: url(../img/stone-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/* CARD - BACKGROUNDS */
+/* SCROLLBAR: créditos a https://github.com/luandersonn/ */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    transition: 1.0s;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(127, 127, 127, 0.6);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: 1.0s;
+}
+
+*::-webkit-scrollbar-thumb:vertical:hover,
+*::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: rgb(110, 110, 110);
+    transition: 0.3s;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+
+*::-webkit-scrollbar-thumb:vertical:active,
+*::-webkit-scrollbar-thumb:horizontal:active {
+    background: rgba(95, 91, 91, 1);
+
+}
+
+*::-webkit-scrollbar-corner {
+    background: none;
+}
+/* SCROLLBAR: créditos a https://github.com/luandersonn/ */

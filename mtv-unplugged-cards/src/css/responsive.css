@@ -1,0 +1,60 @@
+@media (max-width: 620px) {
+    /* CABEÇALHO */
+    .header {
+        flex-direction: column;
+    }
+
+    .header .title {
+        font-size: 30px;
+    }
+
+    .header .logo {
+        width: 60px;
+        height: auto;
+    }
+
+    .banner .subtitle {
+        width: 90%;
+    }
+    /* CABEÇALHO */
+    /* SLIDER */
+    .slider {
+        padding: 0 15px;
+        gap: 10px;
+    }
+
+    .btn-slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        padding: 30px;
+    }
+    /* SLIDER */
+    /* CARDS */
+    .cards {
+        height: 480px;
+    }
+    /* CARDS */
+    /* CARD - INTRO */
+    .single-card .intro .name {
+        max-width: 50%;
+        font-size: 18px;
+    }
+    /* CARD - INTRO */
+    /* CARD - IMG */
+    .single-card .img {
+        max-height: 260px;
+    }
+
+    .single-card .year {
+        font-size: 14px;
+    }
+    /* CARD - IMG */
+    /* CARD - INFO */
+    .single-card .info {
+        max-height: px;
+    }
+    /* CARD - INFO */
+}
