@@ -6,15 +6,12 @@
 
     .header .title {
         font-size: 30px;
+        text-align: center;
     }
 
     .header .logo {
         width: 60px;
         height: auto;
-    }
-
-    .banner .subtitle {
-        width: 90%;
     }
     /* CABEÇALHO */
     /* SLIDER */
