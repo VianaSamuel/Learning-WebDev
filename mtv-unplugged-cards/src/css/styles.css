@@ -2,7 +2,7 @@
 body {
     min-height: 100vh;
     font-family: 'Outfit', sans-serif;
-    background-image: url(../img/teste.jpg);
+    background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
