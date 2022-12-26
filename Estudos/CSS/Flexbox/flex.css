@@ -1,5 +1,5 @@
 /*===GERAL===*/
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,7 @@
 
 /*===HEADER & FOOTER===*/
 .header,
-.footer {
+.footer{
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -39,7 +39,7 @@
     align-content: center;
     justify-content: center;
 }
-.item {
+.item{
     width: 350px;
     height: 250px;
     display: flex;

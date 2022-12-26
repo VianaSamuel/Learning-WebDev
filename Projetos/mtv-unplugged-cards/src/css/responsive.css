@@ -1,25 +1,29 @@
+/* SUMARIO */
+/* 1 - cabecalho */
+/* 2 - slider */
+/* 3 - cards */
+/* 4 - card individual */
+
 @media (max-width: 620px) {
-    /* CABEÇALHO */
+    /*===CABECALHO===*/
     .header {
         flex-direction: column;
     }
-
     .header .title {
         font-size: 30px;
         text-align: center;
     }
-
     .header .logo {
         width: 60px;
         height: auto;
     }
-    /* CABEÇALHO */
-    /* SLIDER */
+
+
+    /*===SLIDER===*/
     .slider {
         padding: 0 15px;
         gap: 10px;
     }
-
     .btn-slider {
         display: flex;
         align-items: center;
@@ -28,30 +32,28 @@
         height: 20px;
         padding: 30px;
     }
-    /* SLIDER */
-    /* CARDS */
+
+
+    /*===CARDS===*/
     .cards {
         height: 480px;
     }
-    /* CARDS */
-    /* CARD - INTRO */
+
+    /*===CARD INDIVIDUAL===*/
+    /*---CARD: INTRO---*/
     .single-card .intro .name {
         max-width: 50%;
         font-size: 18px;
     }
-    /* CARD - INTRO */
-    /* CARD - IMG */
+    /*---CARD: IMG---*/
     .single-card .img {
         max-height: 260px;
     }
-
     .single-card .year {
         font-size: 14px;
     }
-    /* CARD - IMG */
-    /* CARD - INFO */
+    /*---CARD: INFO---*/
     .single-card .info {
         max-height: px;
     }
-    /* CARD - INFO */
 }

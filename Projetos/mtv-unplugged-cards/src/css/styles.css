@@ -1,4 +1,13 @@
-/* CORPO */
+/* SUMARIO */
+/* 1 - corpo */
+/* 2 - cabecalho */
+/* 3 - slider */
+/* 4 - cards */
+/* 5 - card individual */
+/* 6 - scrollbar */
+
+
+/*===CORPO===*/
 body {
     min-height: 100vh;
     display: flex;
@@ -9,17 +18,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* CORPO */
-/* CABEÇALHO */
+
+
+/*===CABECALHO===*/
 .banner {
     padding: 30px 0;
     filter: drop-shadow(1px 1px 8px #111);
 }
-
 .banner .subtitle {
     margin-top: 6px;
 }
-
 .header {
     display: flex;
     flex-direction: column;
@@ -27,23 +35,21 @@ body {
     justify-content: center;
     gap: 15px;
 }
-
 .header .title {
     color: #f1ecff;
 }
-
 .header .logo {
     width: 75px;
     height: auto;
     user-select: none;
 }
-
 .subtitle {
     color:#f1ecff;
     text-align: center;
 }
-/* CABEÇALHO */
-/* SLIDER */
+
+
+/*===SLIDER===*/
 .slider {
     display: flex;
     align-items: center;
@@ -51,7 +57,6 @@ body {
     margin-bottom: 30px;
     gap: 80px;
 }
-
 .btn-slider {
     cursor: pointer;
     width: 70px;
@@ -63,30 +68,29 @@ body {
     transition: background-color 0.15s ease-in-out;
     transition: box-shadow 0.4s;
 }
-
 .btn-slider img {
     user-select: none;
 }
-
 .btn-slider.btn-left {
     transform: rotateY(180deg);
 }
-
 @media (hover: hover) {
     .btn-slider:hover {
         background-color: #8351FE;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 }
-/* SLIDER */
-/* CARDS */
+
+
+/*===CARDS===*/
 .cards {
     position: relative;
     width: 310px;
     height: 520px;
 }
-/* CARDS */
-/* CARD INDIVIDUAL */
+
+
+/*===CARD INDIVIDUAL===*/
 .single-card {
     opacity: 0;
     height: 100%;
@@ -103,14 +107,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-/* CARD INDIVIDUAL */
-/* CARD SELECIONADA */
+/*---CARD SELECIONADO---*/
 .single-card.selected {
     opacity: 1;
     z-index: 1;
 }
-/* CARD SELECIONADA */
-/* CARD - INTRO */
+/*---CARD: INTRO---*/
 .intro {
     display: flex;
     align-items: center;
@@ -120,12 +122,10 @@ body {
     padding: 8px 10px;
     text-decoration: none;
 }
-
 .single-card .intro .name {
     color: #111;
     font-size: 22px;
 }
-
 .single-card .intro .year {
     color: #f1ecff;
     background-color: #333;
@@ -133,12 +133,10 @@ body {
     border-radius: 20px;
     user-select: none;
 }
-/* CARD - INTRO */
-/* CARD - IMG */
+/*---CARD: IMG---*/
 .single-card .img-container {
     text-align: center;
 }
-
 .single-card .img {
     opacity: 80%;
     max-width: 100%;
@@ -148,13 +146,11 @@ body {
     filter: drop-shadow(1px 1px 8px #111)
             drop-shadow(-1px -1px 4px #111);
 }
-/* CARD - IMG */
-/* CARD - INFO */
+/*---CARD: INFO---*/
 .single-card .info {
     overflow: hidden;
     border-radius: 10px;
 }
-
 .single-card .info .description-title {
     color: #f1ecff;
     background-color: #333;
@@ -163,7 +159,6 @@ body {
     padding: 12px;
     user-select: none;
 }
-
 .single-card .info .description-text {
     background-color: white;
     max-height: 125px;
@@ -172,35 +167,30 @@ body {
     font-size: 14px;
     padding: 8px 12px;
 }
-/* CARD - INFO */
-/* CARD - BACKGROUNDS */
+/*---CARD: BACKGROUNDS---*/
 .nirvana {
     background-image: url(../img/nirvana-back.jpg);
 }
-
 .rem {
     background-image: url(../img/rem-back.jpg);
 }
-
 .alice {
     background-image: url(../img/alice-back.jpg);
 }
-
 .pearl {
     background-image: url(../img/pearl-back.jpg);
 }
-
 .stone {
     background-image: url(../img/stone-back.jpg);
 }
-/* CARD - BACKGROUNDS */
-/* SCROLLBAR: créditos a https://github.com/luandersonn/ */
+
+
+/*===SCROLLBAR: créditos a (https://github.com/luandersonn/)===*/
 *::-webkit-scrollbar {
     width: 10px;
     height: 10px;
     transition: 1.0s;
 }
-
 *::-webkit-scrollbar-thumb {
     background-color: rgba(127, 127, 127, 0.6);
     background-clip: padding-box;
@@ -208,26 +198,19 @@ body {
     border-radius: 5px;
     transition: 1.0s;
 }
-
 *::-webkit-scrollbar-thumb:vertical:hover,
 *::-webkit-scrollbar-thumb:horizontal:hover {
     background-color: rgb(110, 110, 110);
     transition: 0.3s;
 }
-
 *::-webkit-scrollbar-track {
     background-color: transparent;
 }
-
-
-
 *::-webkit-scrollbar-thumb:vertical:active,
 *::-webkit-scrollbar-thumb:horizontal:active {
     background: rgba(95, 91, 91, 1);
 
 }
-
 *::-webkit-scrollbar-corner {
     background: none;
 }
-/* SCROLLBAR: créditos a https://github.com/luandersonn/ */

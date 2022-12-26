@@ -1,0 +1,25 @@
+/*===GERAL===*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text{
+    font-size: 30px;
+}
+
+
+/*===TELA & CONTEÚDO===*/
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-auto-rows: minmax(310px, auto);
+    gap: 10px 15px;
+    background-color: darkgray;
+}
+.item {
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
