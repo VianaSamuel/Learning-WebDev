@@ -1,0 +1,95 @@
+/*===FUNDO & CORPOS===*/
+body {
+    background-color: #F3F3F3;
+}
+.container {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+/*===CONTEÚDO===*/
+.project-container {
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    align-items: center;
+    border: 1px solid #F3F3F3;
+    background-color: #FFFFFF;
+}
+.project-info {
+    width: 60%;
+    float: left;
+    padding: 40px 30px;
+    color: #5B5B5B;
+    font-size: 20px;
+    text-align: left;
+}
+.project-container
+img {
+    width: 40%;
+    height: 100%;
+    float: right;
+    object-fit: cover;
+}
+
+/*===FORMATAÇÃO DE TEXTO===*/
+.title {
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #5B5B5B;
+    border-top: 1px solid #5B5B5B;
+    color: #5B5B5B;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+.subtitle a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.description {
+    font-size: 16px;
+    color: #333;
+}
+.links a {
+    color: #007BFF;
+    font-size: 16px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/*===SCROLLBAR: créditos a (https://github.com/luandersonn/)===*/
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    transition: 1.0s;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(127, 127, 127, 0.6);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: 1.0s;
+}
+*::-webkit-scrollbar-thumb:vertical:hover,
+*::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: rgb(110, 110, 110);
+    transition: 0.3s;
+}
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb:vertical:active,
+*::-webkit-scrollbar-thumb:horizontal:active {
+    background: rgba(95, 91, 91, 1);
+
+}
+*::-webkit-scrollbar-corner {
+    background: none;
+}
