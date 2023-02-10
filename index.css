@@ -8,6 +8,7 @@ body {
     margin-bottom: 75px;
 }
 
+
 /*===CONTEÚDO===*/
 .project-container {
     display: flex;
@@ -32,6 +33,7 @@ img {
     float: right;
     object-fit: cover;
 }
+
 
 /*===FORMATAÇÃO DE TEXTO===*/
 .title {
@@ -63,6 +65,7 @@ img {
     margin-right: 20px;
     text-decoration: none;
 }
+
 
 /*===SCROLLBAR: créditos a (https://github.com/luandersonn/)===*/
 *::-webkit-scrollbar {
