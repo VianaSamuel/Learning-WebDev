@@ -1,0 +1,122 @@
+/*=====CONFIGURAÇÕES GERAIS=====*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=====PALETA DE CORES=====*/
+:root {
+    --bg-color: #212529;
+    --font-color: #f1f5f9;
+    --border-color: #666;
+    --primary-color: #4dff91;
+    --error-color: #ff0043;
+}
+
+/*=====FORMATACAO GERAL=====*/
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: "Ubuntu", sans-serif;
+}
+main {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 1.5rem 2.5rem;
+    max-width: 40rem;
+}
+header {
+    padding: 2rem 0;
+}
+
+/*=====SWITCHER=====*/
+#theme-switcher {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    border: .125rem solid var(--font-color);
+    cursor: pointer;
+}
+#theme-switcher:hover {
+    background-color: var(--font-color);
+    color: var(--bg-color);
+}
+
+/*=====BOTOES & INPUT=====*/
+button {
+    border: none;
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+    font-weight: 700;
+    transition: .15s;
+    background-color: var(--primary-color);
+}
+input {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 2px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-size: 1.75rem;
+    text-align: end;
+}
+
+/*=====KEYS=====*/
+#keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+#keys button {
+    color: var(--bg-color);
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#keys button:hover {
+    filter: brightness(0.8)
+}
+
+/*=====RESULTADO & CLIPBOARD=====*/
+#result {
+    border-width: 2px 2px 2px 0;
+    border-radius: 0 .5rem .5rem 0;
+}
+#copy-to-clipboard {
+    display: block;
+    height: 4.25rem;
+    width: 6rem;
+    color: var(--font-color);
+    border: solid var(--border-color);
+    border-width: 2px;
+    border-radius: .5rem 0 0 .5rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+#copy-to-clipboard:hover {
+    background-color: var(--font-color);
+    color: var(--bg-color);
+}
+
+/*=====CLASSES PREDEFINIDAS=====*/
+.flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.error {
+    background-color: var(--error-color);
+}
+.success {
+    color: var(--bg-color) !important;
+    background-color: var(--primary-color) !important;
+}
