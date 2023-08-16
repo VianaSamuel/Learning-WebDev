@@ -1,4 +1,4 @@
-//=====ELEMENTOS=====//
+//=====INICIALIZAÇÃO=====//
 const main = document.querySelector('main')
 const root = document.querySelector(':root')
 const input = document.getElementById('input')
@@ -16,7 +16,7 @@ input.focus()
 const validKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.']
 const validSymbols = ['/', '*', '-', '+', '%', '(', ')']
 
-// CLIQUES
+//=====CLIQUES=====//
 charKeys.forEach(function (btn){
     btn.addEventListener('click', function(){
         clearAll()
@@ -25,7 +25,7 @@ charKeys.forEach(function (btn){
     })
 })
 
-// TECLAS
+//=====TECLAS=====//
 input.addEventListener('keydown', function(ev){
     ev.preventDefault()
     clearAll()
@@ -46,7 +46,7 @@ input.addEventListener('keydown', function(ev){
     }
 })
 
-// RESULTADO
+//=====RESULTADO=====//
 equal.addEventListener('click', calculate)
 function calculate(){
     result.value = 'ERRO'
@@ -56,7 +56,7 @@ function calculate(){
     result.classList.remove('error')
 }
 
-// CLEAR
+//=====CLEAR=====//
 clear.addEventListener('click', function(){
     clearAll()
     result.value = ''
@@ -69,7 +69,7 @@ function clearAll(){
     result.classList.remove('error')
 }
 
-// COPIAR
+//=====COPIAR=====//
 copyToClipboard.addEventListener('click', function(ev){
     const btn = ev.currentTarget
     if (btn.innerText === 'Copiar'){
@@ -79,7 +79,7 @@ copyToClipboard.addEventListener('click', function(ev){
     } else clearAll()
 })
 
-// ALTERAR TEMA
+//=====ALTERAR TEMA=====//
 themeSwitcher.addEventListener('click', function(){
     if (main.dataset.theme === 'dark') {
         root.style.setProperty('--bg-color', '#f1f5f9')

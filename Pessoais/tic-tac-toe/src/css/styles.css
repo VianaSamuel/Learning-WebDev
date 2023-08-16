@@ -1,0 +1,30 @@
+/*=====GERAL=====*/
+body {
+    font-family: sans-serif;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/*=====BOARD=====*/
+#game-board {
+    display: grid;
+    background-color: #232323;
+    margin-bottom: 1.5rem;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    gap: .5rem;
+    max-width: 19rem; /* (6rem-columns * 3) + (.5rem-gap * 2) */
+}
+/*-----GRADE-----*/
+#game-board span {
+    display: grid;
+    user-select: none;
+    place-content: center;
+    background-color: #ddd;
+    font-size: 5rem;
+}
+/*-----VENCEDOR-----*/
+#game-board span.win {
+    background-color: #25a340;
+}

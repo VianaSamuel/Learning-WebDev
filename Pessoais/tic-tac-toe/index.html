@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/img/favicon.png">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script src="src/js/index.js" defer></script>
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+    <hr>
+
+    <label for="player1">X</label>
+    <input type="text" id="player1" placeholder="Jogador 1">
+    <label for="player2">O</label>
+    <input type="text" id="player2" placeholder="Jogador 2">
+
+    <button id="start">Iniciar</button>
+    <h2>Vez de: <span id="player-turn"></span></h2>
+
+    <section id="game-board">
+        <span class="cursor-pointer" data-square="0.0"></span>
+        <span class="cursor-pointer" data-square="0.1"></span>
+        <span class="cursor-pointer" data-square="0.2"></span>
+        <span class="cursor-pointer" data-square="1.0"></span>
+        <span class="cursor-pointer" data-square="1.1"></span>
+        <span class="cursor-pointer" data-square="1.2"></span>
+        <span class="cursor-pointer" data-square="2.0"></span>
+        <span class="cursor-pointer" data-square="2.1"></span>
+        <span class="cursor-pointer" data-square="2.2"></span>
+    </section>
+</body>
+</html>
