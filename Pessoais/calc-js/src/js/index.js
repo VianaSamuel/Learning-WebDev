@@ -12,11 +12,11 @@ const copyToClipboard = document.getElementById('copy-to-clipboard')
 // foco inicial no input
 input.focus()
 
-// teclas validas
+// validação de teclas
 const validKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.']
 const validSymbols = ['/', '*', '-', '+', '%', '(', ')']
 
-//=====CLIQUES=====//
+//=====TRATAR CLIQUES=====//
 charKeys.forEach(function (btn){
     btn.addEventListener('click', function(){
         clearAll()
@@ -25,7 +25,7 @@ charKeys.forEach(function (btn){
     })
 })
 
-//=====TECLAS=====//
+//=====TRATAR DIGITAÇÃO=====//
 input.addEventListener('keydown', function(ev){
     ev.preventDefault()
     clearAll()
@@ -46,17 +46,29 @@ input.addEventListener('keydown', function(ev){
     }
 })
 
-//=====RESULTADO=====//
+//=====CALCULAR RESULTADO=====//
 equal.addEventListener('click', calculate)
 function calculate(){
     result.value = 'ERRO'
     result.classList.add('error')
+
     const calc = eval(input.value)
+    
     result.value = calc
     result.classList.remove('error')
 }
 
-//=====CLEAR=====//
+//=====COPIAR RESULTADO=====//
+copyToClipboard.addEventListener('click', function(ev){
+    const btn = ev.currentTarget
+    if (btn.innerText === 'Copiar'){
+        btn.innerText = 'Copiado!'
+        btn.classList.add('success')
+        navigator.clipboard.writeText(result.value)
+    } else clearAll()
+})
+
+//=====LIMPAR CALCULADORA=====//
 clear.addEventListener('click', function(){
     clearAll()
     result.value = ''
@@ -68,16 +80,6 @@ function clearAll(){
     copyToClipboard.classList.remove('success')
     result.classList.remove('error')
 }
-
-//=====COPIAR=====//
-copyToClipboard.addEventListener('click', function(ev){
-    const btn = ev.currentTarget
-    if (btn.innerText === 'Copiar'){
-        btn.innerText = 'Copiado!'
-        btn.classList.add('success')
-        navigator.clipboard.writeText(result.value)
-    } else clearAll()
-})
 
 //=====ALTERAR TEMA=====//
 themeSwitcher.addEventListener('click', function(){
